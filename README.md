@@ -52,6 +52,12 @@ The core of this project is a Bi-Directional LSTM model. The architecture includ
 
 The model is trained using a subset of the dataset. The training process involves optimizing for categorical cross-entropy loss. Training details, including accuracy and loss over epochs, can be found in the `mo` variable.
 
+## Parallelization during Model Training
+
+In this project, we have leveraged the power of parallelization using TensorFlow's `CentralStorageStrategy`. This strategy allows for efficient distribution of computational tasks, resulting in faster training times and improved model performance. By parallelizing the training process, we have significantly enhanced the scalability and training efficiency of the Bi-Directional LSTM model.
+
+The use of `CentralStorageStrategy` ensures that the available resources are utilized optimally, making this project suitable for large datasets and complex deep learning models.
+
 ## Evaluation
 
 The model's performance is evaluated on a test dataset. The accuracy of the translation can be measured by comparing predicted translations to the actual translations.
