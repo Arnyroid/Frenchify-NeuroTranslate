@@ -54,17 +54,13 @@ The model is trained using a subset of the dataset. The training process involve
 
 ## Parallelization during Model Training
 
-In this project, we have leveraged the power of parallelization using TensorFlow's `CentralStorageStrategy`. This strategy allows for efficient distribution of computational tasks, resulting in faster training times and improved model performance. By parallelizing the training process, we have significantly enhanced the scalability and training efficiency of the Bi-Directional LSTM model.
+In this project, we have leveraged the power of parallelization using TensorFlow's `CentralStorageStrategy`. This strategy allows for efficient distribution of computational tasks, resulting in faster training times and improved model performance. By parallelizing the training process, I have significantly enhanced the scalability and training efficiency of the Bi-Directional LSTM model.
 
 The use of `CentralStorageStrategy` ensures that the available resources are utilized optimally, making this project suitable for large datasets and complex deep learning models.
 
 ## Evaluation
 
 The model's performance is evaluated on a test dataset. The accuracy of the translation can be measured by comparing predicted translations to the actual translations.
-
-## Usage
-
-To use this model for translation, you can follow the code provided in the script. You can load the pre-trained model and make predictions on your own English text.
 
 ## Contributing
 
